@@ -24,7 +24,7 @@ public class WaitTimeLine {
         this.questionType = questionType;
         this.responseType = responseType;
         this.waitTime = waitTime;
-        if(date.length() == 10) {
+        if(date.length() <= 10) {
             String [] temp = date.split("\\.");
             timeLineDate = new Date(
                     Integer.parseInt(temp[2]),
